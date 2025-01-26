@@ -1,0 +1,10 @@
+//Global
+@use 'base/global';
+
+//module
+@use 'module/header';
+@use 'module/footer';
+
+//PaGES CSS
+
+@use 'pages/homepage.scss' //Homepage CSS

@@ -1,0 +1,10 @@
+@use '../base/global' as *;
+
+.bannerSec{background: $colorBlack; height: 100vh;
+    .wrapperSec{@include wrapper; height: 100%;
+        .bannerHeading{display: flex; align-items: center; justify-content: center;flex-flow: column; width: 100%; height: 100%;
+            h1{font-family: $fontleagueGothic; @include font96; line-height: 120%; font-weight: $fontW400; color: $colorWhite; margin-bottom: 4px;}
+            p{font-family: $fontLeagueSpartan; font-weight: $fontW400; @include font32; letter-spacing: 11.52px; line-height: 90%; text-transform: uppercase; color: #fff;}
+        }
+    }
+}
