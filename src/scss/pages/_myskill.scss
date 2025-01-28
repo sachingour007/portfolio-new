@@ -1,0 +1,6 @@
+@use '../base/global' as *; 
+
+.single-skill{width: calc(25% - 15px); display: flex; align-items: center; gap: 20px; border: 1px solid gray;background: lightgray;border-radius: 5px;padding: 5px 10px;flex-basis: content;
+    img{width: 25px; aspect-ratio: 1 / 1;}
+    span{font-weight: $fontW400; font-family: $fontRoboto; line-height: 112%; @include font16;}
+}
