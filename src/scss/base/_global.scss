@@ -182,15 +182,17 @@ template {
     box-sizing: border-box;
     line-height: 1.3;
     outline: none;
-    color: #18191F;
+    
 }
 
 html,
 body {
-    background: #fff;
+    background: #1D1C1D;
     overflow-x: hidden;
     scroll-behavior: smooth;
     overflow-x: hidden;
+	color: #fff;
+	font-family: "Libre Franklin", serif;
 }
 
 /*body{opacity: 0;}*/
@@ -241,23 +243,15 @@ These styles are subject to the license agreement(s) provided when you purchased
 
 
 @mixin wrapper {
-	padding-left: 120px;
-	padding-right: 120px;
-	@media screen and (max-width:1600px) {
-		padding-left: 100px;
-		padding-right: 100px;
-	}
+	padding-left: 80px;
+	padding-right: 40px;
 	@media screen and (max-width:1440px) {
-		padding-left: 80px;
-		padding-right: 80px;
-	}
-    @media screen and (max-width:1280px) {
 		padding-left: 60px;
-		padding-right: 60px;
+		padding-right: 30px;
 	}
 	@media screen and (max-width:1024px) {
 		padding-left: 40px;
-		padding-right: 40px;
+		padding-right: 30px;
 	}
     @media screen and (max-width:768px) {
 		padding-left: 20px;
@@ -495,6 +489,7 @@ $colorWhite : #ffffff;
 $colorGrey : #7D7373;
 $colorBlack : #000000;
 $colorOrange : #FF5C00;
+$colorDarkGray: #1D1C1D;
 
 
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
@@ -514,3 +509,11 @@ img {max-width: 100%;}
 
 .slick-track {display: flex !important;}
 .slick-slide {height: inherit !important;}
+
+$primary-orange: #FF5C00;
+.orange-text {
+  color: $primary-orange;
+  font-weight: bold;
+}
+
+	

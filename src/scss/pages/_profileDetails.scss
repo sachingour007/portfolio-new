@@ -1,0 +1,15 @@
+@use "../base/global" as *;
+
+.profileWrapper{border: 1px solid rgba(100%, 100%, 100%, 0.2); border-radius: 20px; padding: 10px 30px;
+    h1{}
+    .imgBox{overflow: hidden; border-radius: 20px; margin: 12px 0 22px 0    ;
+        img{width: 100%;}
+    }
+    .jobTxtBox{text-align: center; margin-bottom: 22px;
+        h5{margin-bottom: 10px; font-weight: 400; line-height: 120%; font-family: $libreFranklin; @include font24; }
+        p{line-height: 120%; font-weight: 400; @include font20; font-family: $libreFranklin; color: $colorGrey;}
+    }
+    .socials{display: flex; gap: 26px; align-items: center; justify-content: center; margin-bottom: 60px;}
+    .btnHire{background: $colorOrange; color: #1d1c1d; font-family: $libreFranklin; font-weight: 400; @include font28; line-height: 170%; letter-spacing: 0.56px; width: 100%; border-radius: 18px; cursor: pointer;}
+    
+}

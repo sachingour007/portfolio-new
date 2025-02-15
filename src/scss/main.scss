@@ -3,9 +3,10 @@
 
 //module
 @use 'module/header';
-@use 'module/footer';
 
-//PaGES CSS
+//PAGES CSS
 
 @use 'pages/homepage.scss'; //Homepage CSS
 @use 'pages/myskill.scss';
+@use 'pages/mainLayout.scss';
+@use 'pages/profileDetails.scss';
