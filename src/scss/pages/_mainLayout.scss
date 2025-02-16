@@ -3,7 +3,7 @@
 .mainContainer{width: 100%; height: 100vh;     
     .wrapper{padding: 100px 0; display: flex; align-items: center; justify-content: space-between; gap: 60px;@include wrapper; 
         .profileSection{flex-basis: 25%;}
-        .mainContent{flex-basis: 65%;}
-        .sidebarSection{flex-basis: 10%;}
+        .mainContent{flex-basis: 70%;}
+        .sidebarSection{flex-basis: 5%;}
     }
 }

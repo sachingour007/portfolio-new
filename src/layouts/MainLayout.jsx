@@ -1,5 +1,6 @@
 import React from "react";
 import { Homepage, ProfileDetails, SideBar } from "../index";
+import { Outlet } from "react-router-dom";
 
 const MainLayout = () => {
   return (
@@ -9,7 +10,7 @@ const MainLayout = () => {
           <ProfileDetails />
         </section>
         <section className="mainContent">
-          <Homepage />
+          <Outlet />
         </section>
         <section className="sidebarSection">
           <SideBar />
