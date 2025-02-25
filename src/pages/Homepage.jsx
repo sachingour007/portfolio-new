@@ -7,8 +7,7 @@ const Homepage = () => {
         Lets Work <span className="orange-text">Together !</span>
       </h2>
       <h1>
-        Hi From <span className="orange-text">Youlakou</span>, <br /> Framer
-        Designer and Front-End Developer
+        Hi From <span className="orange-text">Sachin Gour</span>, <br /> Front-End Developer
       </h1>
       <p>
         I derive immense joy from designing and coding beautiful, simple

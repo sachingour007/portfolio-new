@@ -14,8 +14,8 @@ const ProfileDetails = () => {
         <img src={profilePic} alt="ProfilePic" />
       </div>
       <div className="jobTxtBox">
-        <h5>Based in casablanca</h5>
-        <p>Junior Frontend Developer, UI/UX Designer</p>
+        <h5>Based in Rajasthan</h5>
+        <p>Frontend Developer</p>
       </div>
       <ul className="socials">
         {socialIcons.map(({ id, linkUrl, socialIcon, altProperty }) => {
