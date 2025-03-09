@@ -30,11 +30,11 @@ const Sidebar = () => {
               <ExpSvg />
             </NavLink>
           </li>
-          <li>
+          {/* <li>
             <NavLink to={"/specilization"}>
               <SepciSvg />
             </NavLink>
-          </li>
+          </li> */}
           <li>
             <NavLink to={"/mySkills"}>
               <SkillSvg />
