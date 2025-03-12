@@ -5,3 +5,4 @@ export { default as SepciSvg } from "./Specializations.jsx";
 export { default as SkillSvg } from "./MySkill.jsx";
 export { default as ProjectSVG } from "./Project.jsx";
 export { default as ContactSvg } from "./ContactMe.jsx";
+

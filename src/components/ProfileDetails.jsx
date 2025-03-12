@@ -3,8 +3,6 @@ import { profilePic } from "../assets/images";
 import { socialIcons } from "../utils/data";
 
 const ProfileDetails = () => {
-  console.log(socialIcons);
-
   return (
     <div className="profileWrapper">
       <h1>

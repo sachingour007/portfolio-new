@@ -1,4 +1,19 @@
-import { facebook, twitter, insta, linkedin, google } from "../assets/images";
+import {
+  facebook,
+  twitter,
+  insta,
+  linkedin,
+  google,
+  htmlIcon,
+  cssIcon,
+  jsIcon,
+  reactIcon,
+  nodeIcon,
+  expressIcon,
+  mongodbIcon,
+  figmaIcon,
+  wordpressIcon,
+} from "../assets/images";
 
 export const socialIcons = [
   {
@@ -78,5 +93,62 @@ export const ExperienceData = [
     companyName: "",
     education: "Postgraduate Diploma (Computer Applications)",
     institute: "Makanlal Chaturvedi National University , Bhopal, Rajasthan",
+  },
+];
+
+export const skillData = [
+  {
+    id: 1,
+    stackName: "HTML",
+    percent: 90,
+    stackIcon: htmlIcon,
+  },
+  {
+    id: 2,
+    stackName: "CSS",
+    percent: 85,
+    stackIcon: cssIcon,
+  },
+  {
+    id: 3,
+    stackName: "JavaScript",
+    percent: 80,
+    stackIcon: jsIcon,
+  },
+  {
+    id: 4,
+    stackName: "ReactJs",
+    percent: 75,
+    stackIcon: reactIcon,
+  },
+  {
+    id: 5,
+    stackName: "NodeJs",
+    percent: 70,
+    stackIcon: nodeIcon,
+  },
+  {
+    id: 6,
+    stackName: "ExpressJs",
+    percent: 70,
+    stackIcon: expressIcon,
+  },
+  {
+    id: 7,
+    stackName: "MongoDB",
+    percent: 65,
+    stackIcon: mongodbIcon,
+  },
+  {
+    id: 8,
+    stackName: "Figma",
+    percent: 60,
+    stackIcon: figmaIcon,
+  },
+  {
+    id: 9,
+    stackName: "Wordpress",
+    percent: 70,
+    stackIcon: wordpressIcon,
   },
 ];
