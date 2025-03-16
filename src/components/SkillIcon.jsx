@@ -1,9 +1,14 @@
-import React from 'react'
+import React, { useState } from "react";
 
-const SkillIcon = () => {
+const SkillIcon = ({ id, stackName, percent, stackIcon }) => {
   return (
-    <div>SkillIcon</div>
-  )
-}
+    <div className="iconBox">
+      <div className={`imgBox`}>
+        <img src={stackIcon} alt="stackIcon" />
+      </div>
+      <p>{stackName}</p>
+    </div>
+  );
+};
 
-export default SkillIcon
+export default SkillIcon;
