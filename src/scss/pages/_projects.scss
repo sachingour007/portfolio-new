@@ -1,0 +1,6 @@
+@use "../base/global" as *;
+
+.projectWrapper{padding-top: 60px; height: 75vh; overflow-y: auto;
+    h1{font-family: $libreFranklin; font-weight: 700; line-height: 100%; letter-spacing: 2px; @include font48; margin-bottom: 50px;}
+
+}

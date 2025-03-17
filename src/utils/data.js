@@ -13,6 +13,9 @@ import {
   mongodbIcon,
   figmaIcon,
   wordpressIcon,
+  youtubeFeature,
+  menteraFeature,
+  netflixgptFeature,
 } from "../assets/images";
 
 export const socialIcons = [
@@ -150,5 +153,90 @@ export const skillData = [
     stackName: "Wordpress",
     percent: 70,
     stackIcon: wordpressIcon,
+  },
+];
+
+const projectData = [
+  {
+    id: 1,
+    title: "NetflixGPT",
+    featureImage: netflixgptFeature,
+    liveLink: "https://netflixgpt-125a4.web.app/",
+    startDate: "December 2024",
+    endDate: "December 2024",
+    description:
+      "A movie exploration platform showcasing the latest films organized by categories, offering detailed movie pages and a responsive design.",
+    techStack: ["ReactJS", "Redux", "JavaScript", "SCSS", "Firebase"],
+    features: [
+      {
+        heading: "Categories",
+        details: "Top Most, Popular, Top Rated",
+      },
+      {
+        heading: "Movie Details",
+        details:
+          "Runtime, Ratings, Trailers, Posters, Summary, Genres, Recommended Movies",
+      },
+      {
+        heading: "Responsive Design",
+        details: "Optimized for various screen sizes and devices.",
+      },
+    ],
+  },
+  {
+    id: 2,
+    title: "Menterra Project",
+    featureImage: menteraFeature,
+    liveLink: "https://menterra-project.netlify.app/",
+    startDate: "August 2024",
+    endDate: "August 2024",
+    description:
+      "Developed a responsive and dynamic website, focusing on delivering user-friendly content and an intuitive interface. Implemented efficient UI rendering with a component-based architecture for scalability.",
+    techStack: ["React", "SCSS"],
+    features: [
+      {
+        heading: "Component-Based Architecture",
+        details:
+          "Ensuring scalability and maintainability for future enhancements.",
+      },
+      {
+        heading: "Optimized Performance",
+        details:
+          "Utilized SCSS features like variables and mixins for better maintainability.",
+      },
+    ],
+  },
+  {
+    id: 3,
+    title: "Video Streaming App",
+    description:
+      "A web application allowing users to watch and stream videos online, overing convenient access to a wide range of content.",
+    featureImage: youtubeFeature,
+    liveLink: "https://magical-alpaca-b072d5.netlify.app/",
+    startDate: "February 2023",
+    endDate: "February 2023",
+    techStack: ["ReactJS", "Rapid API"],
+    features: [
+      {
+        heading: "High-Quality Video Player",
+        details:
+          "Provides an immersive and enjoyable viewing experience through a high-quality video player.",
+      },
+      {
+        heading: "Video Library",
+        details:
+          "Maintains a comprehensive video library with search and browse features, enhancing content discovery for users.",
+      },
+      {
+        heading: "User-Friendly Interface",
+        details:
+          "Designed with an intuitive and user-friendly interface for effortless navigation and video playback.",
+      },
+      {
+        heading: "Latest Web Technologies",
+        details:
+          "Leverages cutting-edge web development technologies for responsive design and efficient video streaming, ensuring a modern and seamless experience for users.",
+      },
+    ],
   },
 ];

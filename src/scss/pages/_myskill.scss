@@ -5,7 +5,7 @@
     .techSkillBox{display: flex; align-items: center; flex-flow: wrap; gap: 20px;
         .iconBox{width: calc(20% - 16px ); display: flex; align-items: center; flex-flow: column; gap: 10px; 
             .imgBox{ border: 1px solid $colorGrey; border-radius: 65px; padding: 36px 15px; cursor: pointer; transition: 0.5s all ease-in-out;
-                img{width: 75px;}   
+                img{width: 75px;}
             }
             p{transition: 0.5s all ease-in-out; font-family: $libreFranklin; line-height: 100%; @include font20;}
             &:hover{
@@ -14,5 +14,4 @@
             }
         }
     }
-
 }
