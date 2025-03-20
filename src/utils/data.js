@@ -156,7 +156,7 @@ export const skillData = [
   },
 ];
 
-const projectData = [
+export const projectData = [
   {
     id: 1,
     title: "NetflixGPT",

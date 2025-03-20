@@ -3,8 +3,11 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
+import ProjectCard from "./ProjectCard";
 
-const SwiperJsSlider = () => {
+const SwiperJsSlider = ({ projectItem }) => {
+  console.log(projectItem);
+
   return (
     <Swiper
       slidesPerView={1}
@@ -12,12 +15,10 @@ const SwiperJsSlider = () => {
         clickable: true,
       }}
       modules={[Pagination]}
-      onSwiper={(swiper) => console.log(swiper)}
     >
-      <SwiperSlide>Slide 1</SwiperSlide>
-      <SwiperSlide>Slide 2</SwiperSlide>
-      <SwiperSlide>Slide 3</SwiperSlide>
-      <SwiperSlide>Slide 4</SwiperSlide>
+      {projectItem.map((el) => (
+        <SwiperSlide key={el.id}>{el}</SwiperSlide>
+      ))}
     </Swiper>
   );
 };
