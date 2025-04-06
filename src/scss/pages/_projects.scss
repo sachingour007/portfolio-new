@@ -2,5 +2,21 @@
 
 .projectWrapper{padding-top: 60px; height: 75vh; overflow-y: auto;
     h1{font-family: $libreFranklin; font-weight: 700; line-height: 100%; letter-spacing: 2px; @include font48; margin-bottom: 50px;}
+    .swiperContainer{height: 530px;
+        .cardBox{cursor: pointer;
+            h2{ font-family: $libreFranklin; font-weight: 700;  line-height: 100%; color: #fff; @include font24;}
+            p{margin: 20px 0; font-family: $libreFranklin; font-weight: 400; @include font20; line-height: 100%; color: $colorGrey;}
+            .projectImgBox{padding-left: 30px;}
+        }
+        .swiper{height: 100%;}
+    }
+}
+
+.modalContainer{position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background: rgba(0,0,0,0.3); display: flex; align-items: center; justify-content: center; z-index: 99;
+    .mainBox{background: #1D1C1D; width: 60%; padding: 20px; border-radius: 10px;
+        .headBox{display: flex; align-items: center; justify-content: space-between;
+            img{width: 40px; height: 40px; cursor: pointer; background: #fff; border-radius: 10px; padding: 5px;} 
+        }
+    }
 
 }

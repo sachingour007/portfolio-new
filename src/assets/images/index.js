@@ -14,6 +14,7 @@ export { default as expressIcon } from "./express-icon.svg";
 export { default as mongodbIcon } from "./mongodb-icon.svg";
 export { default as figmaIcon } from "./figma-icon.svg";
 export { default as wordpressIcon } from "./wordpress-icon.svg";
+export { default as closeIcon } from "./close-icon.svg";
 
 //Project Feature Image
 
