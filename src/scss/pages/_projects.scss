@@ -13,9 +13,29 @@
 }
 
 .modalContainer{position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background: rgba(0,0,0,0.3); display: flex; align-items: center; justify-content: center; z-index: 99;
-    .mainBox{background: #1D1C1D; width: 60%; padding: 20px; border-radius: 10px;
+    .mainBox{background: #1D1C1D; width: 60%; padding: 90px 20px 20px; border-radius: 10px; position: relative;
+        img{width: 40px; height: 40px; cursor: pointer; background: #fff; border-radius: 10px; padding: 5px; position: absolute; right:20px; top: 20px;} 
         .headBox{display: flex; align-items: center; justify-content: space-between;
-            img{width: 40px; height: 40px; cursor: pointer; background: #fff; border-radius: 10px; padding: 5px;} 
+            h2{font-family: $libreFranklin; font-weight: 400; @include font24; line-height: 100%;
+                a{font-family: $libreFranklin; font-weight: 400; @include font18; line-height: 100%; text-decoration: underline; text-transform: capitalize;}
+            }
+            p{font-family: $libreFranklin; font-weight: 400; @include font20; line-height: 100%;}
+        }
+        .description{font-family: $libreFranklin; font-weight: 400; @include font18; line-height: 100%; color: $colorGrey; margin: 30px 0 20px;}
+        .feautres{
+            ul{
+                li{display: flex; align-items: center;gap:10px; margin-bottom: 10px;
+                    p{font-family: $libreFranklin; font-weight: 400; @include font18; line-height: 100%;
+                        &:last-child{color: $colorGrey;}
+                    }
+                }
+            }
+        }
+        .techstacks{display: flex; align-items: center; gap:10px;
+            p{font-family: $libreFranklin; font-weight: 400; @include font18; line-height: 100%;}
+            ul{display: flex; align-items: center; gap: 10px; margin: 10px 0;
+                li{font-family: $libreFranklin; font-weight: 400; @include font18; line-height: 100%; color: $colorGrey;}
+            }
         }
     }
 
