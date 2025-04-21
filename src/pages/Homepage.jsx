@@ -1,13 +1,13 @@
 import React from "react";
+import HeadingComponent from "../components/HeadingComponent";
 
 const Homepage = () => {
   return (
     <div className="homepageWrapper">
-      <h2>
-        Lets Work <span className="orange-text">Together !</span>
-      </h2>
+      <HeadingComponent normalText="Lets Work" orangeText="Together !" />
       <h1>
-        Hi From <span className="orange-text">Sachin Gour</span>, <br /> Front-End Developer
+        Hi From <span className="orange-text">Sachin Gour</span>, <br />{" "}
+        Front-End Developer
       </h1>
       <p>
         I derive immense joy from designing and coding beautiful, simple

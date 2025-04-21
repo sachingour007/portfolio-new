@@ -1,7 +1,6 @@
 @use "../base/global" as *;
 
-.skillWrapper{padding-top: 60px; height: 75vh; overflow-y: auto;
-    h1{font-family: $libreFranklin; font-weight: 700; line-height: 100%; letter-spacing: 2px; @include font48; margin-bottom: 50px;}
+.skillWrapper{height: 75vh; overflow-y: auto;
     .techSkillBox{display: flex; align-items: center; flex-flow: wrap; gap: 20px;
         .iconBox{width: calc(20% - 16px ); display: flex; align-items: center; flex-flow: column; gap: 10px; 
             .imgBox{ border: 1px solid $colorGrey; border-radius: 65px; padding: 36px 15px; cursor: pointer; transition: 0.5s all ease-in-out;

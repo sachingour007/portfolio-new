@@ -1,0 +1,3 @@
+@use "../base/global" as *;
+
+h2{margin-bottom: 60px; padding-top: 60px; font-family: $libreFranklin; font-weight: 700; @include font48; line-height: 120%; letter-spacing: 2px;}

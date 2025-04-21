@@ -13,7 +13,7 @@ const ProjectCard = ({
 }) => {
   return (
     <div className="cardBox" onClick={modalHandler}>
-      <h2>{title}</h2>
+      <h3>{title}</h3>
       <p>{description}</p>
       <div className="projectImgBox">
         <img src={featureImage} alt="" />

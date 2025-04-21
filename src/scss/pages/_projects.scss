@@ -1,10 +1,9 @@
 @use "../base/global" as *;
 
-.projectWrapper{padding-top: 60px; height: 75vh; overflow-y: auto;
-    h1{font-family: $libreFranklin; font-weight: 700; line-height: 100%; letter-spacing: 2px; @include font48; margin-bottom: 50px;}
-    .swiperContainer{height: 530px;
+.projectWrapper{height: 75vh; overflow-y: auto;
+    .swiperContainer{height: 525px;
         .cardBox{cursor: pointer;
-            h2{ font-family: $libreFranklin; font-weight: 700;  line-height: 100%; color: #fff; @include font24;}
+            h3{ font-family: $libreFranklin; font-weight: 700;  line-height: 100%; color: #fff; @include font24;}
             p{margin: 20px 0; font-family: $libreFranklin; font-weight: 400; @include font20; line-height: 100%; color: $colorGrey;}
             .projectImgBox{padding-left: 30px;}
         }

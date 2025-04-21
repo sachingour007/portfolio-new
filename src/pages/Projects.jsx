@@ -3,6 +3,7 @@ import SwiperJsSlider from "../components/SwiperJsSlider";
 import { projectData } from "../utils/data";
 import ProjectCard from "../components/ProjectCard.jsx";
 import ProjectDetail from "../components/ProjectDetail.jsx";
+import HeadingComponent from "../components/HeadingComponent.jsx";
 
 const Projects = () => {
   const [pData, setPData] = useState(projectData);
@@ -24,9 +25,7 @@ const Projects = () => {
 
   return (
     <div className="projectWrapper">
-      <h1>
-        Featured <span className="orange-text">Projects</span>
-      </h1>
+      <HeadingComponent normalText="Featured" orangeText="Projects" />
       <div className="swiperContainer">
         <SwiperJsSlider
           projectItem={pData.map((el) => (
