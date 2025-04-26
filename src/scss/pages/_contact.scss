@@ -1,0 +1,16 @@
+@use "../base/global" as *;
+
+.contactUsWrapper{
+    h2{font-family: $libreFranklin; font-weight: 400; @include font24; line-height: 100%; color: #fff; margin-bottom: 30px;}
+    .formBox{
+        form{display: flex; flex-flow: column; gap: 25px;
+            input{border: 1px solid #fff; background-color: transparent; padding: 10px; font-family: $fontpopins; font-weight: 400; @include font16; line-height: 100%; color: #fff; border-radius: 10px;
+                &::placeholder{font-family: $fontpopins; font-weight: 400; @include font16;}
+            }
+            textarea{background-color: transparent; border: 1px solid #fff; padding: 10px; font-family: $fontpopins; font-weight: 400; @include font16; line-height: 100%; color: #fff; border-radius: 10px; height: 225px; resize: none;
+                &::placeholder{font-family: $fontpopins; font-weight: 400; @include font16;}
+            }
+            button{width: fit-content; padding: 10px 50px; border-radius: 10px; background-color:$colorOrange; color: #fff; @include font20; font-family: $fontpopins; letter-spacing: 100%;cursor: pointer;} 
+        }
+    }
+}
