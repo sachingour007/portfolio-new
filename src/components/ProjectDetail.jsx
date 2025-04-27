@@ -32,8 +32,8 @@ const ProjectDetail = ({
           <ul >
           {features.map((feautre) => (
               <li key={features.heading}>
-                <p>{feautre.heading}:</p>
-                <p>{feautre.details}</p>
+                <p className="heading">{feautre.heading}:</p>
+                <p className="details">{feautre.details}</p>
               </li>
           ))}
           </ul>
