@@ -7,18 +7,13 @@
             &::-webkit-scrollbar-track{
                 background-color: #1d1c1d;
             }
-
             &::-webkit-scrollbar{
                 width: 6px;
                 background-color: #F5F5F5;
             }
-
-            &::-webkit-scrollbar-thumb
-            {
-                background-color: #ff5f00;;
+            &::-webkit-scrollbar-thumb{
+                background-color: #ff5f00;
             }
-            
-        
         }
         .sidebarSection{width: calc(7% - 40px); margin: auto 0;}
     }
