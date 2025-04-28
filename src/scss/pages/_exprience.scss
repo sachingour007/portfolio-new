@@ -1,6 +1,6 @@
 @use "../base/global" as *;
 
-.expWrapper{height: 75vh; overflow-y: auto;
+.expWrapper{
     .expDetails{
         .innerBox{margin-bottom: 30px;
             h3{margin-bottom: 15px;font-family: $libreFranklin; line-height: 100%;  @include font24;}
