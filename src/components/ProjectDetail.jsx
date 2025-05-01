@@ -20,7 +20,7 @@ const ProjectDetail = ({
           <h2>
             {title}{" "}
             <a href={liveLink} target="_blank">
-              (link)
+              [LINK]
             </a>
           </h2>
           <p>
@@ -29,17 +29,17 @@ const ProjectDetail = ({
         </div>
         <p className="description">{description}</p>
         <div className="feautres">
-          <ul >
-          {features.map((feautre) => (
+          <ul>
+            {features.map((feautre) => (
               <li key={features.heading}>
                 <p className="heading">{feautre.heading}:</p>
                 <p className="details">{feautre.details}</p>
               </li>
-          ))}
+            ))}
           </ul>
         </div>
         <div className="techstacks">
-          <p>TechStack: </p> 
+          <p>TechStack: </p>
           <ul>
             {techStack.map((tech) => (
               <li key={tech}>{tech}</li>

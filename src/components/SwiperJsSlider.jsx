@@ -12,10 +12,10 @@ const SwiperJsSlider = ({ projectItem }) => {
       pagination={{
         clickable: true,
       }}
-      // autoplay={{
-      //   delay: 3000,
-      //   disableOnInteraction: false,
-      // }}
+      autoplay={{
+        delay: 3000,
+        disableOnInteraction: false,
+      }}
       modules={[Pagination, Autoplay]}
     >
       {projectItem.map((el) => (
