@@ -1,7 +1,7 @@
 @use "../base/global" as *;
 
-.profileWrapper{border: 1px solid rgba(100%, 100%, 100%, 0.2); border-radius: 20px; padding: 20px 30px 30px;
-    .imgBox{overflow: hidden; border-radius: 20px; margin: 12px 0 22px 0    ;
+.profileWrapper{border: 1px solid rgba(100%, 100%, 100%, 0.2); border-radius: 20px; padding:30px;
+    .imgBox{overflow: hidden; border-radius: 20px; margin: 12px 0 22px 0;
         img{width: 100%;}
     }
     .jobTxtBox{text-align: center; margin-bottom: 22px;
@@ -11,8 +11,22 @@
     .socials{display: flex; gap: 26px; align-items: center; justify-content: center; margin-bottom: 60px;}
     .btnHire{background: $colorOrange; color: #1d1c1d; font-family: $libreFranklin; font-weight: 400; @include font28; line-height: 170%; letter-spacing: 0.56px; width: 100%; border-radius: 18px; cursor: pointer;}
 
-    @media all and (max-width: 1800px){
-        
+    @media all and (max-width: 1800px){padding: 28px;}
+    @media all and (max-width: 1600px){padding: 26px;
+        .imgBox{margin: 10px 0 20px 0;}
+        .jobTxtBox{margin-bottom: 20px;}
+        .socials {margin-bottom: 50px; gap: 24px;}
+    }
+    @media all and (max-width: 1440px){padding: 24px;
+        .socials {margin-bottom: 40px; gap: 20px;}
+    }
+    @media all and (max-width: 1280px){padding: 20px;
+        .socials {margin-bottom: 35px; gap: 20px;}
+    }
+    @media all and (max-width: 1024px){padding: 30px; display: inline-flex; align-items: center; flex-flow: column;
+        .imgBox{margin: 10px 0 20px 0; height: 500px; width: 500px;}
+        .jobTxtBox{margin-bottom: 20px;}
+        .socials {margin-bottom: 35px; gap: 20px;}
     }
     
 }
