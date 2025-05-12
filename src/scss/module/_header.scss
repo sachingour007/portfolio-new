@@ -2,7 +2,7 @@
 
 .sidebarWrapper{padding: 35px 12px; border: 1px solid rgba(100%, 100%, 100%, 0.2); border-radius: 40px;
     nav{
-        .navIcons{display: flex; flex-flow: column; gap: 32px; align-items: center;
+        .navIcons{display: inline-flex; flex-flow: column; gap: 32px; align-items: center;
             li{cursor: pointer;
                 a{display: block;
                     &.active{
@@ -19,5 +19,17 @@
                 }
             }
         }
+    }
+    @media all and (max-width: 1600px){padding: 32px 12px;}
+    @media all and (max-width: 1440px){padding: 30px 12px;
+        nav{
+            .navIcons{gap:30px}
+        }
+    }
+    @media all and (max-width: 1024px){padding: 20px 10px;border-radius: 45px;
+        nav{
+            .navIcons{gap: 25px; flex-flow: row; justify-content: space-evenly; width: 100%; align-items: center;}
+        }
+
     }
 }

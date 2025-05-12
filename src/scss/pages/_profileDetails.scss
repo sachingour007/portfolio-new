@@ -1,12 +1,13 @@
 @use "../base/global" as *;
 
-.profileWrapper{border: 1px solid rgba(100%, 100%, 100%, 0.2); border-radius: 20px; padding:30px;
+.profileWrapper{border: 1px solid rgba(100%, 100%, 100%, 0.2); border-radius: 20px; padding:30px; display: inline-flex; align-items: center; flex-flow: column; width: 100%;
     .imgBox{overflow: hidden; border-radius: 20px; margin: 12px 0 22px 0;
         img{width: 100%;}
     }
-    .jobTxtBox{text-align: center; margin-bottom: 22px;
-        h5{margin-bottom: 10px; font-weight: 400; line-height: 120%; font-family: $libreFranklin; @include font24; }
-        p{line-height: 120%; font-weight: 400; @include font20; font-family: $libreFranklin; color: $colorGrey;}
+    .mainName{font-family: $libreFranklin; line-height: 100%; letter-spacing: 0.5px; @include font32;}
+    .jobTxtBox{margin-bottom: 22px; text-align: center;
+        p{line-height: 120%; font-weight: 500; @include font24; font-family: $libreFranklin;  margin: 5px 0;}
+        h5{ font-weight: 400; line-height: 120%; font-family: $libreFranklin; @include font20; color: $colorGrey; }
     }
     .socials{display: flex; gap: 26px; align-items: center; justify-content: center; margin-bottom: 60px;}
     .btnHire{background: $colorOrange; color: #1d1c1d; font-family: $libreFranklin; font-weight: 400; @include font28; line-height: 170%; letter-spacing: 0.56px; width: 100%; border-radius: 18px; cursor: pointer;}
@@ -23,10 +24,10 @@
     @media all and (max-width: 1280px){padding: 20px;
         .socials {margin-bottom: 35px; gap: 20px;}
     }
-    @media all and (max-width: 1024px){padding: 30px; display: inline-flex; align-items: center; flex-flow: column;
-        .imgBox{margin: 10px 0 20px 0; height: 500px; width: 500px;}
+    @media all and (max-width: 1024px){padding: 30px; display: flex; align-items: center; flex-flow: column;
+        .imgBox{margin: 10px 0 20px 0; height: 400px; width: 400px;}
         .jobTxtBox{margin-bottom: 20px;}
         .socials {margin-bottom: 35px; gap: 20px;}
+        .btnHire{width: 40%; padding: 10px;}
     }
-    
 }

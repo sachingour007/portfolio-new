@@ -27,15 +27,15 @@
     @media all and (max-width: 1600px){
         .wrapper{padding-top: 80px; padding-bottom: 80px; gap: 40px;
             .profileSection{width: calc(25% - 40px)}
-            .mainContent{width: calc(68% - 40px);}
-            .sidebarSection{width: calc(7% - 40px);}
+            .mainContent{width: calc(67% - 40px);}
+            .sidebarSection{width: calc(8% - 40px);}
         }
     }
     @media all and (max-width: 1440px){
         .wrapper{padding-top: 70px; padding-bottom: 70px; gap: 30px;
             .profileSection{width: calc(25% - 30px)}
-            .mainContent{width: calc(68% - 30px);}
-            .sidebarSection{width: calc(7% - 30px);}
+            .mainContent{width: calc(67% - 30px);}
+            .sidebarSection{width: calc(8% - 30px);}
         }
     }
     @media all and (max-width: 1280px){
@@ -44,7 +44,7 @@
     @media all and (max-width: 1024px){
         .wrapper{padding-top: 50px; padding-bottom: 50px; gap: 20px; flex-flow: column;
             .profileSection{width: 100%;}
-            .mainContent{width: 100%;}
+            .mainContent{width: 100%; padding-bottom: 40px;}
             .sidebarSection{width: 100%;}
         }
     }

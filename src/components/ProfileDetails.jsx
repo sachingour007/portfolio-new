@@ -5,15 +5,15 @@ import { socialIcons } from "../utils/data";
 const ProfileDetails = () => {
   return (
     <div className="profileWrapper">
-      <h1>
-        <span className="orange-text">S</span>achin
-      </h1>
       <div className="imgBox">
         <img src={profilePic} alt="ProfilePic" />
       </div>
+      <h1 className="mainName">
+        <span className="orange-text">S</span>achin
+      </h1>
       <div className="jobTxtBox">
-        <h5>Based in Rajasthan</h5>
         <p>Frontend Developer</p>
+        <h5>Based in Rajasthan</h5>
       </div>
       <ul className="socials">
         {socialIcons.map(({ id, linkUrl, socialIcon, altProperty }) => {

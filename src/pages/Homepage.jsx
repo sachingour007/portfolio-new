@@ -5,10 +5,10 @@ const Homepage = () => {
   return (
     <div className="homepageWrapper">
       <HeadingComponent normalText="Lets Work" orangeText="Together !" />
-      <h1>
-        Hi From <span className="orange-text">Sachin Gour</span>, <br />{" "}
+      <h2>
+        Hi From <span className="orange-text">Sachin Gour</span>,
         Front-End Developer
-      </h1>
+      </h2>
       <p>
         I derive immense joy from designing and coding beautiful, simple
         creations. My work is a true passion, characterized by a commitment to
