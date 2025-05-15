@@ -1,14 +1,11 @@
 import React from "react";
-import {
-  HomeSvg,
-  AboutUsSvg,
-  ExpSvg,
-  SepciSvg,
-  SkillSvg,
-  ProjectSVG,
-  ContactSvg,
-} from "../assets/svgComponent";
 import { NavLink } from "react-router-dom";
+import HomeRoundedIcon from "@mui/icons-material/HomeRounded";
+import PersonOutlineOutlinedIcon from "@mui/icons-material/PersonOutlineOutlined";
+import SchoolOutlinedIcon from "@mui/icons-material/SchoolOutlined";
+import IntegrationInstructionsOutlinedIcon from "@mui/icons-material/IntegrationInstructionsOutlined";
+import WorkOutlineOutlinedIcon from "@mui/icons-material/WorkOutlineOutlined";
+import MailOutlineOutlinedIcon from "@mui/icons-material/MailOutlineOutlined";
 
 const Sidebar = () => {
   return (
@@ -17,37 +14,32 @@ const Sidebar = () => {
         <ul className="navIcons">
           <li>
             <NavLink to={"/"}>
-              <HomeSvg />
+              <HomeRoundedIcon />
             </NavLink>
           </li>
           <li>
             <NavLink to={"/about-me"}>
-              <AboutUsSvg />
+              <PersonOutlineOutlinedIcon />
             </NavLink>
           </li>
           <li>
             <NavLink to={"/experience"}>
-              <ExpSvg />
+              <SchoolOutlinedIcon />
             </NavLink>
           </li>
-          {/* <li>
-            <NavLink to={"/specilization"}>
-              <SepciSvg />
-            </NavLink>
-          </li> */}
           <li>
             <NavLink to={"/mySkills"}>
-              <SkillSvg />
+              <IntegrationInstructionsOutlinedIcon />
             </NavLink>
           </li>
           <li>
             <NavLink to={"/projects"}>
-              <ProjectSVG />
+              <WorkOutlineOutlinedIcon />
             </NavLink>
           </li>
           <li>
             <NavLink to={"/contact-me"}>
-              <ContactSvg />
+              <MailOutlineOutlinedIcon />
             </NavLink>
           </li>
         </ul>
