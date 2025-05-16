@@ -8,10 +8,12 @@ const MySkill = () => {
   return (
     <div className="skillWrapper">
       <HeadingComponent normalText="My" orangeText="Skills" />
-      <div className="techSkillBox">
-        {dataForSkill.map((el) => (
-          <SkillIcon key={el.id} {...el} />
-        ))}
+      <div className="scrollEffect">
+        <div className=" techSkillBox ">
+          {dataForSkill.map((el) => (
+            <SkillIcon key={el.id} {...el} />
+          ))}
+        </div>
       </div>
     </div>
   );

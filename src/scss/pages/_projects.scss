@@ -1,13 +1,25 @@
 @use "../base/global" as *;
 
-.projectWrapper{height: 75vh; overflow-y: auto;
-    .swiperContainer{height: 525px;
-        .cardBox{cursor: pointer;
-            h3{ font-family: $libreFranklin; font-weight: 700;  line-height: 100%; color: #fff; @include font24;}
-            p{margin: 20px 0; font-family: $libreFranklin; font-weight: 400; @include font20; line-height: 100%; color: $colorGrey;}
-            .projectImgBox{padding-left: 30px;}
+.projectWrapper{
+    .swiperContainer{
+        .cardBox{display: flex; align-items: center; justify-content: space-between;  border: 1px solid rgba(255, 255, 255, 0.1); padding: 20px; border-radius: 10px; position: relative;
+            .projectImgBox{width: calc(60% - 20px); border-radius: 12px;overflow: hidden; box-shadow: 0 8px 16px rgba(0,0,0,0.2);}
+            .textlayout{width: calc(40% - 20px);
+                h3{ font-family: $libreFranklin; font-weight: 700;  line-height: 120%; color: #fff; @include font24; }
+                p{margin: 20px 0 25px; font-family: $libreFranklin; font-weight: 400; @include font20; line-height: 140%; color: $colorGrey; display: -webkit-box; text-overflow: ellipsis; overflow: hidden; -webkit-box-orient: vertical; -webkit-line-clamp: 6;}
+                button{ background: #FF5C00; color: white; padding: 8px 16px; border: none; border-radius: 4px; font-weight: 500;cursor: pointer; transition: background 0.3s; font-family: $fontpopins; @include font16; line-height: 120%;
+                    &:hover {background: #e65100;}
+                }
+            }
         }
-        .swiper{height: 100%;}
+        .swiper {height: 100%;
+            .swiper-pagination{
+                .swiper-pagination-bullet{background: #fff;border-radius: 5px; width: 8px;
+                    &.swiper-pagination-bullet-active{ width: 50px;}
+                }
+            }
+
+        }
     }
 }
 
@@ -18,13 +30,13 @@
             h2{font-family: $libreFranklin; font-weight: 400; @include font24; line-height: 100%;
                 a{font-family: $libreFranklin; font-weight: 400; @include font18; line-height: 100%; text-decoration: underline; text-transform: capitalize;}
             }
-            p{font-family: $libreFranklin; font-weight: 400; @include font20; line-height: 100%;}
+            p{font-family: $libreFranklin; font-weight: 400; @include font20; line-height: 140%;}
         }
-        .description{font-family: $libreFranklin; font-weight: 400; @include font18; line-height: 100%; color: $colorGrey; margin: 40px 0 30px;}
+        .description{font-family: $libreFranklin; font-weight: 400; @include font18; line-height: 140%; color: $colorGrey; margin: 40px 0 30px;}
         .feautres{margin-bottom: 30px;
             ul{
                 li{display: flex;gap:10px; margin-bottom: 10px;
-                    p{font-family: $libreFranklin; font-weight: 400; @include font18; line-height: 100%; width: 30%;
+                    p{font-family: $libreFranklin; font-weight: 400; @include font18; line-height: 140%; width: 30%;
                         &:last-child{color: $colorGrey;}
                         &.heading{width: 30%;}
                         &.details{width: 68%;}

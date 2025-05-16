@@ -5,12 +5,16 @@
     .formBox{
         form{display: flex; flex-flow: column; gap: 25px;
             input{border: 1px solid rgba(255, 255, 255, 0.2); background-color: transparent; padding: 10px; font-family: $fontpopins; font-weight: 400; @include font16; line-height: 100%; color: #fff; border-radius: 10px;
-                &::placeholder{font-family: $fontpopins; font-weight: 400; @include font16;}
+                &::placeholder{font-family: $fontpopins; font-weight: 400; @include font16; color: $colorOrange;}
             }
             textarea{background-color: transparent; border: 1px solid rgba(255, 255, 255, 0.2); padding: 10px; font-family: $fontpopins; font-weight: 400; @include font16; line-height: 100%; color: #fff; border-radius: 10px; height: 225px; resize: none;
-                &::placeholder{font-family: $fontpopins; font-weight: 400; @include font16;}
+                &::placeholder{font-family: $fontpopins; font-weight: 400; @include font16; color: $colorOrange ;}
             }
-            button{width: fit-content; padding: 10px 50px; border-radius: 10px; background-color:$colorOrange; color: #fff; @include font20; font-family: $fontpopins; letter-spacing: 100%;cursor: pointer;} 
+            button{width: fit-content; padding: 10px 50px; border-radius: 10px; background-color:$colorOrange; color: #fff; @include font20; font-family: $fontpopins; letter-spacing: 100%;cursor: pointer; font-weight: 500; transition: background 0.5s ease-in-out;
+                &:hover{
+                    background-color:  #e65100;
+                }
+            } 
         }
     }
 }

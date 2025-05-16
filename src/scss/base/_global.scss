@@ -516,4 +516,15 @@ $primary-orange: #FF5C00;
   font-weight: bold;
 }
 
-	
+.scrollEffect{overflow-y: auto; scroll-behavior: smooth; height: 500px;
+	&::-webkit-scrollbar-track{
+		background-color: #1d1c1d;
+	}
+	&::-webkit-scrollbar{
+		width: 6px;
+		background-color: #F5F5F5;
+	}
+	&::-webkit-scrollbar-thumb{
+		background-color: #ff5f00;
+	}
+}

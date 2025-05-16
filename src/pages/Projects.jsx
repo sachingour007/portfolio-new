@@ -26,7 +26,7 @@ const Projects = () => {
   return (
     <div className="projectWrapper">
       <HeadingComponent normalText="Featured" orangeText="Projects" />
-      <div className="swiperContainer">
+      <div className=" swiperContainer scrollEffect">
         <SwiperJsSlider
           projectItem={pData.map((el) => (
             <ProjectCard

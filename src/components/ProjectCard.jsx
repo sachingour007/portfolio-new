@@ -12,11 +12,14 @@ const ProjectCard = ({
   modalHandler,
 }) => {
   return (
-    <div className="cardBox" onClick={modalHandler}>
-      <h3>{title}</h3>
-      <p>{description}</p>
+    <div className="cardBox">
       <div className="projectImgBox">
         <img src={featureImage} alt="" />
+      </div>
+      <div className="textlayout">
+        <h3>{title}</h3>
+        <p>{description}</p>
+        <button onClick={modalHandler}>View Project</button>
       </div>
     </div>
   );

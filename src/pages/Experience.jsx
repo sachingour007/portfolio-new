@@ -7,7 +7,7 @@ const Experience = () => {
   return (
     <div className="expWrapper">
       <HeadingComponent normalText="Education &" orangeText="Experience" />
-      <div className="expDetails">
+      <div className="expDetails scrollEffect">
         {expData.map(
           ({
             id,

@@ -1,9 +1,7 @@
 @use "../base/global" as *;
 
-.customHeading{margin-bottom: 60px; padding-top: 60px; font-family: $libreFranklin; font-weight: 700; @include font48; line-height: 120%; letter-spacing: 2px;
+.customHeading{margin-bottom: 50px; padding-top: 50px; font-family: $libreFranklin; font-weight: 700; @include font48; line-height: 120%; letter-spacing: 2px;
     
-    @media all and (max-width: 1800px){margin-bottom: 55px; padding-top: 55px;}
-    @media all and (max-width: 1600px){margin-bottom: 50px; padding-top: 50px;}
     @media all and (max-width: 1440px){margin-bottom: 40px; padding-top: 40px;}
     @media all and (max-width: 1280px){margin-bottom: 30px; padding-top: 30px;}
     @media all and (max-width: 1024px){margin-bottom: 30px; padding-top: 40px;}
