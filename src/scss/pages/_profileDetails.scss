@@ -10,7 +10,11 @@
         h5{ font-weight: 400; line-height: 120%; font-family: $libreFranklin; @include font20; color: $colorGrey; }
     }
     .socials{display: flex; gap: 26px; align-items: center; justify-content: center; margin-bottom: 60px;}
-    .btnHire{background: $colorOrange; color: #1d1c1d; font-family: $libreFranklin; font-weight: 400; @include font28; line-height: 170%; letter-spacing: 0.56px; width: 100%; border-radius: 18px; cursor: pointer;}
+    a{width: 100%;
+        .btnHire{background: $colorOrange; color: #1d1c1d; font-family: $libreFranklin; font-weight: 400; @include font28; line-height: 170%; letter-spacing: 0.56px; width: 100%; border-radius: 18px; cursor: pointer; transition: background 0.5s ease-in-out;
+            &:hover{background: #e65100;}
+        }
+    }
 
     @media all and (max-width: 1800px){padding: 28px;}
     @media all and (max-width: 1600px){padding: 26px;

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { profilePic } from "../assets/images";
 import { socialIcons } from "../utils/data";
 
@@ -26,7 +27,9 @@ const ProfileDetails = () => {
           );
         })}
       </ul>
-      <button className="btnHire">HIRE ME!</button>
+      <Link to={"/contact-me"}>
+        <button className="btnHire">HIRE ME!</button>
+      </Link>
     </div>
   );
 };
