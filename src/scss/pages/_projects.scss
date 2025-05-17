@@ -3,7 +3,9 @@
 .projectWrapper{
     .swiperContainer{
         .cardBox{display: flex; align-items: center; justify-content: space-between;  border: 1px solid rgba(255, 255, 255, 0.1); padding: 20px; border-radius: 10px; position: relative;
-            .projectImgBox{width: calc(60% - 20px); border-radius: 12px;overflow: hidden; box-shadow: 0 8px 16px rgba(0,0,0,0.2);}
+            .projectImgBox{width: calc(60% - 20px); border-radius: 12px;overflow: hidden; box-shadow: 0 8px 16px rgba(0,0,0,0.2); position: relative;
+                &::after{content: ""; position: absolute; top: 0; left: 0; height: 100%; width: 100%; background: rgba(0%, 0%, 0%, 0.1);}
+            }
             .textlayout{width: calc(40% - 20px);
                 h3{ font-family: $libreFranklin; font-weight: 700;  line-height: 120%; color: #fff; @include font24; }
                 p{margin: 20px 0 25px; font-family: $libreFranklin; font-weight: 400; @include font20; line-height: 140%; color: $colorGrey; display: -webkit-box; text-overflow: ellipsis; overflow: hidden; -webkit-box-orient: vertical; -webkit-line-clamp: 6;}
@@ -21,10 +23,20 @@
 
         }
     }
+    @media all and (max-width: 1440px){
+        .swiperContainer{
+            .swiper{
+                .swiper-wrapper{
+                    .swiper-slide{padding-right: 5px;}
+                }
+                .swiper-pagination{bottom: 75px !important; top: unset;}
+            }
+        }
+    }
 }
 
 .modalContainer{position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background: rgba(0,0,0,0.3); display: flex; align-items: center; justify-content: center; z-index: 99;
-    .mainBox{background: #1D1C1D; width: 40%; padding: 90px 20px 20px; border-radius: 10px; position: relative;
+    .mainBox{background: #1D1C1D; width: 50%; padding: 90px 20px 20px; border-radius: 10px; position: relative;
         img{width: 40px; height: 40px; cursor: pointer; background: #fff; border-radius: 10px; padding: 5px; position: absolute; right:20px; top: 20px;} 
         .headBox{display: flex; align-items: center; justify-content: space-between;
             h2{font-family: $libreFranklin; font-weight: 400; @include font24; line-height: 100%;

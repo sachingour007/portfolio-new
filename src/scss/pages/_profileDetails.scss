@@ -1,37 +1,70 @@
 @use "../base/global" as *;
 
-.profileWrapper{border: 1px solid rgba(100%, 100%, 100%, 0.2); border-radius: 20px; padding:30px; display: inline-flex; align-items: center; flex-flow: column; width: 100%;
-    .imgBox{overflow: hidden; border-radius: 20px; margin: 12px 0 22px 0;
+.profileWrapper{border: 1px solid rgba(100%, 100%, 100%, 0.2); border-radius: 20px; padding:30px; display: inline-flex; align-items: center; flex-flow: column; width: 100%; gap: 20px;
+    .imgBox{overflow: hidden; border-radius: 20px; position:relative; width: 100%;
         img{width: 100%;}
+        &::after{content: ""; position: absolute; top: 0; left: 0; height: 100%; width: 100%; background: rgba(0%, 0%, 0%, 0.2 );}
     }
-    .mainName{font-family: $libreFranklin; line-height: 100%; letter-spacing: 0.5px; @include font32;}
-    .jobTxtBox{margin-bottom: 22px; text-align: center;
-        p{line-height: 120%; font-weight: 500; @include font24; font-family: $libreFranklin;  margin: 5px 0;}
-        h5{ font-weight: 400; line-height: 120%; font-family: $libreFranklin; @include font20; color: $colorGrey; }
-    }
-    .socials{display: flex; gap: 26px; align-items: center; justify-content: center; margin-bottom: 60px;}
-    a{width: 100%;
-        .btnHire{background: $colorOrange; color: #1d1c1d; font-family: $libreFranklin; font-weight: 400; @include font28; line-height: 170%; letter-spacing: 0.56px; width: 100%; border-radius: 18px; cursor: pointer; transition: background 0.5s ease-in-out;
-            &:hover{background: #e65100;}
+    .detailsBox{display: flex; align-items: center; justify-content: center; flex-flow: column; width: 100%;
+        .mainName{font-family: $libreFranklin; line-height: 100%; letter-spacing: 0.5px; @include font32;}
+        .jobTxtBox{margin-bottom: 22px; text-align: center;
+            p{line-height: 120%; font-weight: 500; @include font24; font-family: $libreFranklin;  margin: 5px 0;}
+            h5{ font-weight: 400; line-height: 120%; font-family: $libreFranklin; @include font20; color: $colorGrey; }
+        }
+        .socials{display: flex; gap: 26px; align-items: center; justify-content: center; margin-bottom: 60px;
+            li{width: 35px;}
+            
+        }
+        a{width: 100%;
+            .btnHire{background: $colorOrange; color: #1d1c1d; font-family: $libreFranklin; font-weight: 400; @include font28; line-height: 170%; letter-spacing: 0.56px; width: 100%; border-radius: 18px; cursor: pointer; transition: background 0.5s ease-in-out;
+                &:hover{background: #e65100;}
+            }
         }
     }
 
     @media all and (max-width: 1800px){padding: 28px;}
     @media all and (max-width: 1600px){padding: 26px;
-        .imgBox{margin: 10px 0 20px 0;}
-        .jobTxtBox{margin-bottom: 20px;}
-        .socials {margin-bottom: 50px; gap: 24px;}
+        .detailsBox{
+            .jobTxtBox{margin-bottom: 20px;}
+            .socials {margin-bottom: 50px; gap: 24px;
+                li{width: 30px;}
+            }
+        }
     }
     @media all and (max-width: 1440px){padding: 24px;
-        .socials {margin-bottom: 40px; gap: 20px;}
+        .detailsBox{
+            .socials {margin-bottom: 40px; gap: 20px;
+                 li{width: 28px;}
+            }
+        }
     }
     @media all and (max-width: 1280px){padding: 20px;
-        .socials {margin-bottom: 35px; gap: 20px;}
+        .detailsBox{
+            .socials {margin-bottom: 35px; gap: 16px;
+                li{width: 25px;}
+            }
+        }
     }
-    @media all and (max-width: 1024px){padding: 30px; display: flex; align-items: center; flex-flow: column;
-        .imgBox{margin: 10px 0 20px 0; height: 400px; width: 400px;}
-        .jobTxtBox{margin-bottom: 20px;}
-        .socials {margin-bottom: 35px; gap: 20px;}
-        .btnHire{width: 40%; padding: 10px;}
+    @media all and (max-width: 1024px){padding: 30px; display: flex; align-items: center; justify-content: space-between; flex-flow: nowrap;
+        .imgBox{height: 400px; width: 400px;}
+        .detailsBox{width: calc(100% - 460px); 
+            .jobTxtBox{margin-bottom: 20px;}
+            .socials {margin-bottom: 35px; gap: 20px;}
+            a{width: 75%;
+                .btnHire{width: 100%; padding: 10px;}
+            }
+        }
+    }
+
+    @media all and (max-width: 820px){padding: 25px;
+        .imgBox{margin:0; height: 350px; width: 350px;}
+        .detailsBox{width: calc(100% - 410px);
+            .jobTxtBox{margin-bottom: 20px;}
+            .socials {margin-bottom: 35px; gap: 20px;}
+            a{width: 75%;
+                .btnHire{width: 100%; padding: 10px;}
+            }
+        }
+
     }
 }

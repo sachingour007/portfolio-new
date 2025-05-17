@@ -1,11 +1,10 @@
 @use "../base/global" as *;
 
-.mainContainer{width: 100%;     
+.mainContainer{width: 100%;
     .wrapper{padding: 100px 0; display: flex; justify-content: space-between; gap: 60px; @include wrapper; 
-        .profileSection{width: calc(25% - 60px)}
-        .mainContent{width: calc(68% - 60px);  max-height:70vh; 
-        }
-        .sidebarSection{width: calc(7% - 60px); margin: auto 0;}
+        .profileSection{width: calc(25% - 60px);}
+        .mainContent{width: calc(68% - 60px);}
+        .sidebarSection{width: calc(7% - 60px); margin: auto 0; }
     }
     @media all and (max-width: 1800px){
         .wrapper{padding-top: 90px; padding-bottom: 90px; gap: 50px;
@@ -15,27 +14,27 @@
         }
     }
     @media all and (max-width: 1600px){
-        .wrapper{padding-top: 80px; padding-bottom: 80px; gap: 40px;
+        .wrapper{padding-top: 60px; padding-bottom: 60px; gap: 40px;
             .profileSection{width: calc(25% - 40px)}
             .mainContent{width: calc(67% - 40px);}
             .sidebarSection{width: calc(8% - 40px);}
         }
     }
     @media all and (max-width: 1440px){
-        .wrapper{padding-top: 70px; padding-bottom: 70px; gap: 30px;
+        .wrapper{padding-top: 28px; padding-bottom: 28px; gap: 30px;
             .profileSection{width: calc(25% - 30px)}
             .mainContent{width: calc(67% - 30px);}
             .sidebarSection{width: calc(8% - 30px);}
         }
     }
     @media all and (max-width: 1280px){
-        .wrapper{padding-top: 60px; padding-bottom: 60px;}
+        .wrapper{padding-top: 30px; padding-bottom: 30px;}
     }
     @media all and (max-width: 1024px){
-        .wrapper{padding-top: 50px; padding-bottom: 50px; gap: 20px; flex-flow: column;
-            .profileSection{width: 100%;}
-            .mainContent{width: 100%; padding-bottom: 40px;}
-            .sidebarSection{width: 100%;}
+        .wrapper{padding-top: 50px; padding-bottom: 50px; gap: 50px; flex-flow: column;
+            .profileSection{width: 100%; order: 3;}
+            .mainContent{width: 100%; padding-bottom: 40px; order: 2;}
+            .sidebarSection{width: 100%; order: 1;}
         }
     }
 }

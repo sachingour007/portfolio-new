@@ -17,4 +17,20 @@
             } 
         }
     }
+    @media all and (max-width: 1600px){
+        h2{margin-bottom: 28px;}
+        .formBox{
+            form{
+                textarea{height: 200px;}
+            }
+        }
+    }
+    @media all and (max-width: 1440px){
+        h2{margin-bottom: 26px;}
+        .formBox{
+            form{
+                textarea{height: 180px;}
+            }
+        }
+    }
 }

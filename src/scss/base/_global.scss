@@ -253,7 +253,7 @@ These styles are subject to the license agreement(s) provided when you purchased
 		padding-left: 40px;
 		padding-right: 30px;
 	}
-    @media screen and (max-width:768px) {
+    @media screen and (max-width:720px) {
 		padding-left: 20px;
 		padding-right: 20px;
 	}
@@ -516,7 +516,7 @@ $primary-orange: #FF5C00;
   font-weight: bold;
 }
 
-.scrollEffect{overflow-y: auto; scroll-behavior: smooth; height: 500px;
+.scrollEffect{overflow-y: auto; scroll-behavior: smooth; height: 500px; padding-right: 20px;
 	&::-webkit-scrollbar-track{
 		background-color: #1d1c1d;
 	}
@@ -527,4 +527,7 @@ $primary-orange: #FF5C00;
 	&::-webkit-scrollbar-thumb{
 		background-color: #ff5f00;
 	}
+	@media all and (max-width: 1600px){height: 450px;}
+	@media all and (max-width: 1440px){height: 425px;}
+	@media all and (max-width: 1024px){height: auto;}
 }

@@ -6,10 +6,10 @@ const Aboutus = () => {
     <div className="aboutUsWrapper">
       <HeadingComponent normalText="About" orangeText="Me" />
       <div className="scrollEffect">
-        <h1>
+        <h2>
           I'm someone who finds profound joy in the art of design and{" "}
           <span className="orange-text">coding</span>
-        </h1>
+        </h2>
         <p>
           With an unwavering passion for crafting beautiful and simple
           creations, I pour my heart into every project I undertake. My work is

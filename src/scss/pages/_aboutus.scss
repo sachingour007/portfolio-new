@@ -1,6 +1,10 @@
 @use "../base/global" as *;
 
-.aboutUsWrapper{height: 70vh; overflow-y: auto;
-    h1{font-family: $libreFranklin; font-weight: 700; @include font48; line-height: 120%; letter-spacing: 2px; margin-bottom: 30px; width: 55%;}
+.aboutUsWrapper{
+    h2{font-family: $libreFranklin; font-weight: 700; @include font48; line-height: 120%; letter-spacing: 2px; margin-bottom: 30px; width: 55%;}
     p{@include font24; font-family: $libreFranklin; line-height: 120%; color: $colorGrey;}
+
+    @media all and (max-width: 1800px){
+        h2{width: 70%;}
+    }
 }
