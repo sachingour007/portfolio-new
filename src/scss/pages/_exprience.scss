@@ -5,9 +5,25 @@
         .innerBox{margin-bottom: 30px;
             h3{margin-bottom: 15px;font-family: $libreFranklin; line-height: 100%;  @include font24;}
             .detailBox{ padding-left: 20px;
-                h5{margin-bottom: 5px; font-family: $libreFranklin; font-weight: 700; line-height: 100%; @include font24;}
-                p{font-family: $libreFranklin; color: $colorGrey; @include font20;}
+                h5{margin-bottom: 8px; font-family: $libreFranklin; font-weight: 700; line-height: 100%; @include font24;}
+                p{font-family: $libreFranklin; color: $colorGrey; @include font20; line-height: 100%;}
             }
+            &:last-child{margin-bottom: 0;}
+        }
+    }
+    @media all and (max-width: 1800px){
+        .expDetails{
+            .innerBox{margin-bottom: 28px;}
+        }
+    }
+    @media all and (max-width: 1600px){
+        .expDetails{
+            .innerBox{margin-bottom: 26px;}
+        }
+    }
+    @media all and (max-width: 1440px){
+        .expDetails{
+            .innerBox{margin-bottom: 24px;}
         }
     }
 }

@@ -17,6 +17,14 @@
             } 
         }
     }
+
+    @media all and (max-width: 1800px){
+        .formBox{
+            form{
+                textarea{height: 215px;}
+            }
+        }
+    }
     @media all and (max-width: 1600px){
         h2{margin-bottom: 28px;}
         .formBox{

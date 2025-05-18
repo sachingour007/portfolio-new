@@ -13,4 +13,23 @@
             }
         }
     }
+    @media all and (max-width: 1800px){
+        .techSkillBox{
+            .iconBox{
+                .imgBox{padding: 34px 14px;
+                    img{width: 70px;}
+                }
+            }
+        }
+    }
+    @media all and (max-width: 1600px){
+        .techSkillBox{
+            .iconBox{
+                .imgBox{padding: 30px 12px;
+                    img{width: 60px;}
+                }
+            }
+        }
+        
+    }
 }
