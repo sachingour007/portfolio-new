@@ -7,17 +7,22 @@ const Aboutus = () => {
       <HeadingComponent normalText="About" orangeText="Me" />
       <div className="scrollEffect">
         <h2>
-          I'm someone who finds profound joy in the art of design and{" "}
-          <span className="orange-text">coding</span>
+          I'm passionate about crafting responsive and efficient user interfaces
+          using
+          <span className="orange-text"> code</span>
         </h2>
         <p>
-          With an unwavering passion for crafting beautiful and simple
-          creations, I pour my heart into every project I undertake. My work is
-          a reflection of my dedication to merging aesthetics with user-centered
-          functionality. With each design and code, I aim to create solutions
-          that not only look pleasing but also make life easier for users.
-          Welcome to my world of elegant simplicity, where every line of code
-          and every pixel hold the essence of my love for what I do.
+          a passionate Front-End Developer who enjoys turning complex problems
+          into clean, functional web applications. With a strong foundation in
+          JavaScript, HTML, and CSS, and hands-on experience in React.js, I
+          strive to build responsive, accessible, and performance-driven user
+          interfaces. I'm currently expanding my skills into full-stack
+          development with the MERN stack, and I'm actively
+          learning backend technologies like Node.js, Express, and MongoDB. For
+          me, writing efficient, readable code is more than a skill — it's
+          something I truly enjoy. I take pride in crafting scalable and
+          maintainable front-end solutions that contribute to better user
+          experiences.
         </p>
       </div>
     </div>

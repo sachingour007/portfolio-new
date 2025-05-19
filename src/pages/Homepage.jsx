@@ -11,9 +11,7 @@ const Homepage = () => {
           Developer
         </h2>
         <p>
-          I derive immense joy from designing and coding beautiful, simple
-          creations. My work is a true passion, characterized by a commitment to
-          elegance and user-friendliness.
+          passionate about creating elegant, user-centric web experiences using modern technologies like React.js and JavaScript. Let’s collaborate to build something impactful.
         </p>
         <div className="projectDetails">
           <ul>
