@@ -35,10 +35,13 @@
         }
     }
     @media all and (max-width: 1024px){
-        .wrapper{padding-top: 50px; padding-bottom: 50px; gap: 50px; flex-flow: column;
+        .wrapper{padding-top: 40px; padding-bottom: 40px; gap: 50px; flex-flow: column;
             .profileSection{width: 100%; order: 3;}
             .mainContent{width: 100%; order: 2;}
             .sidebarSection{width: 100%; order: 1;}
         }
+    }
+    @media all and (max-width: 720px){
+         .wrapper{padding-top: 20px; padding-bottom: 20px; gap: 30px;}
     }
 }

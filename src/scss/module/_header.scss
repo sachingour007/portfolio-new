@@ -48,8 +48,26 @@
     }
     @media all and (max-width: 1024px){padding: 20px 10px;border-radius: 20px;
         nav{
-            .navIcons{gap: 25px; flex-flow: row; justify-content: space-evenly; width: 100%; align-items: center;}
+            .navIcons{gap: 25px; flex-flow: row; justify-content: space-evenly; width: 100%; align-items: center;
+                li{
+                    a{
+                        svg{width: 35px; height: 35px;}
+                    }
+                }
+            
+            }
         }
-
+    }
+    @media all and (max-width: 720px){padding: 10px;
+         nav{
+            .navIcons{gap: 15px; justify-content: space-between;
+                li{
+                    a{
+                        svg{width: 32px; height: 32px;}
+                    }
+                }
+            
+            }
+        }
     }
 }

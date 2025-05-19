@@ -6,7 +6,7 @@
         &::after{content: ""; position: absolute; top: 0; left: 0; height: 100%; width: 100%; background: rgba(0%, 0%, 0%, 0.2 );}
     }
     .detailsBox{display: flex; align-items: center; justify-content: center; flex-flow: column; width: 100%;
-        .mainName{font-family: $libreFranklin; line-height: 100%; letter-spacing: 0.5px; @include font32;}
+        .mainName{font-family: $libreFranklin; line-height: 140%; letter-spacing: 1px; @include font32;}
         .jobTxtBox{margin-bottom: 22px; text-align: center;
             p{line-height: 120%; font-weight: 500; @include font24; font-family: $libreFranklin;  margin: 5px 0;}
             h5{ font-weight: 400; line-height: 120%; font-family: $libreFranklin; @include font20; color: $colorGrey; }
@@ -45,11 +45,17 @@
             }
         }
     }
-    @media all and (max-width: 1024px){padding: 30px; display: flex; align-items: center; justify-content: space-between; flex-flow: nowrap;
+    @media all and (max-width: 1024px){padding: 30px; display: flex; align-items: center; justify-content: space-around; flex-flow: nowrap;
         .imgBox{height: 400px; width: 400px;}
-        .detailsBox{width: calc(100% - 460px); 
-            .jobTxtBox{margin-bottom: 20px;}
-            .socials {margin-bottom: 35px; gap: 20px;}
+        .detailsBox{width: calc(100% - 460px);
+            .mainName{@include font60;}
+            .jobTxtBox{
+                p{@include font32; margin: 8px 0;}
+                h5{@include font28;}
+            }
+            .socials {margin-bottom: 30px; gap: 26px;
+                li{width: 30px;}
+            }
             a{width: 75%;
                 .btnHire{width: 100%; padding: 10px;}
             }
@@ -57,14 +63,18 @@
     }
 
     @media all and (max-width: 820px){padding: 25px;
-        .imgBox{margin:0; height: 350px; width: 350px;}
-        .detailsBox{width: calc(100% - 410px);
-            .jobTxtBox{margin-bottom: 20px;}
-            .socials {margin-bottom: 35px; gap: 20px;}
-            a{width: 75%;
+        .imgBox{margin:0; height: 300px; width: 300px;}
+        .detailsBox{width: calc(100% - 350px);
+            .jobTxtBox{margin-bottom: 20px;
+                p{margin: 5px 0;}
+            }
+            a{width: 100%;
                 .btnHire{width: 100%; padding: 10px;}
             }
         }
-
+    }
+    @media all and (max-width: 720px){padding: 20px;flex-flow: column;
+         .imgBox{margin:0; height: 250px; width: 250px;}
+         .detailsBox{width: 100%;}
     }
 }

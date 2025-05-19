@@ -26,4 +26,11 @@
             .innerBox{margin-bottom: 24px;}
         }
     }
+    @media all and (max-width: 720px){
+        .expDetails{
+            .innerBox{margin-bottom: 20px;
+                h3{margin-bottom: 10px;}
+            }
+        }
+    }
 }

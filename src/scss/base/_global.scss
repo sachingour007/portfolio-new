@@ -251,7 +251,7 @@ These styles are subject to the license agreement(s) provided when you purchased
 	}
 	@media screen and (max-width:1024px) {
 		padding-left: 40px;
-		padding-right: 30px;
+		padding-right: 40px;
 	}
     @media screen and (max-width:720px) {
 		padding-left: 20px;
@@ -308,7 +308,7 @@ These styles are subject to the license agreement(s) provided when you purchased
     @media screen and (max-width:1024px) {
 		font-size: 32px;
 	}
-    @media screen and (max-width:680px) {
+    @media screen and (max-width:720px) {
 		font-size: 28px;
 	}
 }
@@ -343,7 +343,7 @@ These styles are subject to the license agreement(s) provided when you purchased
     @media screen and (max-width:1024px) {
 		font-size: 26px;
 	}
-    @media screen and (max-width:680px) {
+    @media screen and (max-width:720px) {
 		font-size: 22px;
 	}
 }
@@ -351,30 +351,29 @@ These styles are subject to the license agreement(s) provided when you purchased
 @mixin font36 {
 	font-size: 36px;
     @media screen and (max-width:1600px) {
-		font-size: 28px;
+		font-size: 30px;
 	}
     @media screen and (max-width:1440px) {
-		font-size: 20px;
+		font-size: 24px;
 	}
-    @media screen and (max-width:680px) {
+    @media screen and (max-width:720px) {
 		font-size: 16px;
 	}
-   
 }
 
 @mixin font32 {
 	font-size: 32px;
     @media screen and (max-width:1600px) {
-		font-size: 30px;
+		font-size: 26px;
 	}
-	@media screen and (max-width:1280px) {
+	@media screen and (max-width:1440px) {
 		font-size: 26px;
 	}
     @media screen and (max-width:1024px) {
-		font-size: 22px;
+		font-size: 20px;
 	}
-    @media screen and (max-width:680px) {
-		font-size: 18px;
+    @media screen and (max-width:720px) {
+		font-size: 16px;
 	}
 }
 
@@ -384,16 +383,13 @@ These styles are subject to the license agreement(s) provided when you purchased
 		font-size: 26px;
 	}
     @media screen and (max-width:1440px) {
-		font-size: 24px;
-	}
-	@media screen and (max-width:1280px) {
 		font-size: 22px;
 	}
     @media screen and (max-width:1024px) {
-		font-size: 20px;
+		font-size: 18px;
 	}
-    @media screen and (max-width:680px) {
-		font-size: 16px;
+    @media screen and (max-width:720px) {
+		font-size: 14px;
 	}
 }
 
@@ -421,7 +417,7 @@ These styles are subject to the license agreement(s) provided when you purchased
 	@media screen and (max-width:1440px) {
 		font-size: 16px;
 	}
-    @media screen and (max-width:1200px) {
+    @media screen and (max-width:1024px) {
 		font-size: 14px;
 	}
 }
@@ -434,7 +430,7 @@ These styles are subject to the license agreement(s) provided when you purchased
     @media screen and (max-width:1440px) {
 		font-size: 14px;
 	}
-    @media screen and (max-width:678px) {
+    @media screen and (max-width:720px) {
 		font-size: 12px;
 	}
 }
@@ -447,7 +443,7 @@ These styles are subject to the license agreement(s) provided when you purchased
     @media screen and (max-width:1400px) {
 		font-size: 14px;
 	}
-    @media screen and (max-width:680px) {
+    @media screen and (max-width:720px) {
 		font-size: 12px;
 	}
 }
@@ -461,6 +457,7 @@ These styles are subject to the license agreement(s) provided when you purchased
 		font-size: 12px;
 	}
 }
+
 @mixin font14 {
 	font-size: 14px;
     @media screen and (max-width:1024px) {

@@ -30,4 +30,12 @@
         h2{width: 100%; margin-bottom: 25px;}
         p{margin-bottom: 30px; letter-spacing: 0.85px;}
     }
+    @media all and (max-width: 720px){
+        h2{margin-bottom: 20px;}
+         .projectDetails{
+            ul{gap: 10px;
+                li{width: 30%}
+            }
+        }
+    }
 }
