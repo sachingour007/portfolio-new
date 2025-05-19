@@ -32,4 +32,14 @@
         }
         
     }
+    @media all and (max-width: 1440px){
+        .techSkillBox{gap: 16px;
+            .iconBox{
+                .imgBox{padding: 28px 10px;
+                    img{width: 50px;}
+                }
+            }
+        }
+        
+    }
 }

@@ -28,7 +28,11 @@
         }
     }
     @media all and (max-width: 1280px){
-        .wrapper{padding-top: 30px; padding-bottom: 30px;}
+        .wrapper{padding-top: 30px;
+            .mainContent{width: calc(68% - 30px);}
+            .sidebarSection{width: calc(7% - 30px);}
+        
+        }
     }
     @media all and (max-width: 1024px){
         .wrapper{padding-top: 50px; padding-bottom: 50px; gap: 50px; flex-flow: column;

@@ -35,6 +35,17 @@
             }
         }
     }
+    @media all and (max-width: 1280px){padding: 26px 12px;
+        nav{
+            .navIcons{gap:26px;
+                li{
+                    a{
+                        svg{width: 30px; height: 30px;}
+                    }
+                }
+            }
+        }
+    }
     @media all and (max-width: 1024px){padding: 20px 10px;border-radius: 20px;
         nav{
             .navIcons{gap: 25px; flex-flow: row; justify-content: space-evenly; width: 100%; align-items: center;}
