@@ -523,6 +523,7 @@ $primary-orange: #FF5C00;
 	}
 	&::-webkit-scrollbar-thumb{
 		background-color: #ff5f00;
+		border-radius: 5px;
 	}
 	@media all and (max-width: 1600px){height: 450px;}
 	@media all and (max-width: 1440px){height: 425px;}
