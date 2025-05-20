@@ -1,9 +1,4 @@
 import {
-  facebook,
-  twitter,
-  insta,
-  linkedin,
-  google,
   htmlIcon,
   cssIcon,
   jsIcon,
@@ -17,9 +12,6 @@ import {
   menteraFeature,
   netflixgptFeature,
 } from "../assets/images";
-
-
-
 
 export const ExperienceData = [
   {
