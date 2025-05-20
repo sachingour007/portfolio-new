@@ -1,7 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { profilePic } from "../assets/images";
-import { socialIcons } from "../utils/data";
+import { SocialIcons } from "../utils/SocialIcons.jsx";
+console.log(SocialIcons);
 
 const ProfileDetails = () => {
   return (
@@ -18,11 +19,11 @@ const ProfileDetails = () => {
           <h5>Based in Rajasthan</h5>
         </div>
         <ul className="socials">
-          {socialIcons.map(({ id, linkUrl, socialIcon, altProperty }) => {
+          {SocialIcons.map(({ id, linkUrl, socialIcon, altProperty }) => {
             return (
               <li key={id}>
                 <a href={linkUrl} target="_blank">
-                  <img src={socialIcon} alt={altProperty} />
+                  {socialIcon}
                 </a>
               </li>
             );

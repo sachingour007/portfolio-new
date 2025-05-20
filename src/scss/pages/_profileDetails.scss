@@ -12,8 +12,13 @@
             h5{ font-weight: 400; line-height: 120%; font-family: $libreFranklin; @include font20; color: $colorGrey; }
         }
         .socials{display: flex; gap: 26px; align-items: center; justify-content: center; margin-bottom: 60px;
-            li{width: 35px;}
-            
+           li{transform: translateY(0); transition: 0.4s all ease-in-out;
+                a{ 
+                    svg{color: #fff; width: 40px; height: 40px;}
+                }
+                &:hover{transform: translateY(-5px);
+                }
+           }
         }
         a{width: 100%;
             .btnHire{background: $colorOrange; color: #1d1c1d; font-family: $libreFranklin; font-weight: 400; @include font28; line-height: 170%; letter-spacing: 0.56px; width: 100%; border-radius: 18px; cursor: pointer; transition: background 0.5s ease-in-out;
@@ -27,22 +32,28 @@
         .detailsBox{
             .jobTxtBox{margin-bottom: 20px;}
             .socials {margin-bottom: 50px; gap: 24px;
-                li{width: 30px;}
+                li{ 
+                    a{ 
+                        svg{width: 35px; height: 35px;}
+                    }
+                }
             }
         }
     }
     @media all and (max-width: 1440px){padding: 24px;
         .detailsBox{
             .socials {margin-bottom: 40px; gap: 20px;
-                 li{width: 28px;}
+                 li{
+                    a{ 
+                        svg{width: 30px; height: 30px;}
+                    }
+                 }
             }
         }
     }
     @media all and (max-width: 1280px){padding: 20px;
         .detailsBox{
-            .socials {margin-bottom: 35px; gap: 16px;
-                li{width: 25px;}
-            }
+            .socials {margin-bottom: 35px; gap: 16px;}
         }
     }
     @media all and (max-width: 1024px){padding: 30px; display: flex; align-items: center; justify-content: space-around; flex-flow: nowrap;
@@ -53,9 +64,7 @@
                 p{@include font32; margin: 8px 0;}
                 h5{@include font28;}
             }
-            .socials {margin-bottom: 30px; gap: 26px;
-                li{width: 30px;}
-            }
+            .socials {margin-bottom: 30px; gap: 26px;}
             a{width: 75%;
                 .btnHire{width: 100%; padding: 10px;}
             }
