@@ -3,7 +3,7 @@
 .profileWrapper{border: 1px solid rgba(100%, 100%, 100%, 0.2); border-radius: 20px; padding:30px; display: inline-flex; align-items: center; flex-flow: column; width: 100%; gap: 20px;
     .imgBox{overflow: hidden; border-radius: 20px; position:relative; width: 100%;
         img{width: 100%;}
-        &::after{content: ""; position: absolute; top: 0; left: 0; height: 100%; width: 100%; background: rgba(0%, 0%, 0%, 0.2 );}
+        &::after{content: ""; position: absolute; top: 0; left: 0; height: 100%; width: 100%; background: rgba(0%, 0%, 0%, 0.3);}
     }
     .detailsBox{display: flex; align-items: center; justify-content: center; flex-flow: column; width: 100%;
         .mainName{font-family: $libreFranklin; line-height: 140%; letter-spacing: 1px; @include font32;}
