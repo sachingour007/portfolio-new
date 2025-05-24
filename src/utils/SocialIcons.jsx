@@ -25,7 +25,7 @@ export const SocialIcons = [
   },
   {
     id: 4,
-    linkUrl: "./public/Resume-SachinGour.pdf",
+    linkUrl: "/resume-sachingour.pdf",
     socialIcon: <FilePresentIcon />,
     altProperty: "linkedin",
   },
