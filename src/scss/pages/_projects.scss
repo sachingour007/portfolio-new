@@ -79,7 +79,7 @@
             }
              .swiper{
                 .swiper-wrapper{
-                    .swiper-slide{}
+                    .swiper-slide{padding-right: 0;}
                 }
                 .swiper-pagination{
                     .swiper-pagination-bullet{width: 5px; height: 5px;
@@ -96,7 +96,7 @@
         img{width: 40px; height: 40px; cursor: pointer; background: #fff; border-radius: 10px; padding: 5px; position: absolute; right:20px; top: 20px;} 
         .headBox{display: flex; align-items: baseline; justify-content: space-between;
             h2{font-family: $libreFranklin; font-weight: 400; @include font24; line-height: 100%;
-                a{font-family: $libreFranklin; font-weight: 400; @include font18; line-height: 100%; text-decoration: underline; text-transform: capitalize;}
+                a{font-family: $libreFranklin; font-weight: 400; @include font18; line-height: 100%; text-decoration: underline; text-transform: capitalize; color: #FF5C00; margin-left: 5px;}
             }
             p{font-family: $libreFranklin; font-weight: 400; @include font20; line-height: 140%;}
         }
@@ -152,6 +152,12 @@
         .mainBox{padding: 70px 15px 15px;
             .headBox{flex-flow: column; gap: 10px;
                 h2{font-size: 20px;}
+            }
+            .techstacks{ gap: 10px; align-items: flex-start;
+                p{width: 30%;}
+                ul{flex-flow: wrap; margin: 0; width: 70%;
+
+                }
             }
         }  
     }

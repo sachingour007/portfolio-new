@@ -60,10 +60,10 @@
     }
     @media all and (max-width: 720px){padding: 10px;
          nav{
-            .navIcons{gap: 15px; justify-content: space-between;
-                li{
+            .navIcons{gap: 10px; flex-flow: wrap; justify-content: center;
+                li{width: calc(16% - 8px);
                     a{
-                        svg{width: 32px; height: 32px;}
+                        svg{width: 30px; height: 30px;}
                     }
                 }
             
