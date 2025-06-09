@@ -25,7 +25,6 @@ const ContactMe = () => {
         },
         import.meta.env.VITE_PUBLICK_KEY
       );
-      console.log(res);
 
       alert("Form is Submited Successfully !!");
       setFormVal({

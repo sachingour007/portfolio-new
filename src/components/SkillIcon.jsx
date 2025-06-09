@@ -1,5 +1,3 @@
-import React, { useState } from "react";
-
 const SkillIcon = ({ id, stackName, percent, stackIcon }) => {
   return (
     <div className="iconBox">

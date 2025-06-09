@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { profilePic } from "../assets/images";
 import { SocialIcons } from "../utils/SocialIcons.jsx";
-console.log(SocialIcons);
 
 const ProfileDetails = () => {
   return (
